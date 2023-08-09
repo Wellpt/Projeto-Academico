@@ -50,6 +50,6 @@ export async function deleteUser(req: Request<{ id: string}>, res: Response) {
   const useCase = new DeleteUsersUseCase()
   await useCase.handle(id)
   return res.json({
-    message: 'Usuário deletado com sucesso!!'
+    message: 'Usuário deletado com sucesso!!!'
   })
 }
